@@ -14,7 +14,9 @@ In : makeblastdb  –in Ppr_instagrall.polished.FINAL.copy.fa  –dbtype nucl �
 
 Megablast/normales Format:
 In : 
+
 blastn -db /home/linda/Scratch/Natalie/Ppr_instagrall.polished.FINAL.copy.fa -query /home/linda/Scratch/Natalie/GCF_001931755.2_ASM193175v2Einzeln_genomic.fna  -out Fsm_megablast.results
+
 Out : Scratch/linda/Natalie/Genomes/Wolbachia/results/Fsm_megablast.results
 
 Megablast/Outformat6:
