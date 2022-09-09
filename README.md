@@ -6,7 +6,7 @@ Host is ancient asexual oribatid mite Platynothrus peltifer
 
 - download genome of Folsomia endosymbiont Wolbachia from NCBI (accession number :ASM193175v2)
 
-- Blastn of Wolbachia endosymbiont of Folsomia genome against Ppr. genome 
+# Blastn of Wolbachia endosymbiont of Folsomia genome against Ppr. genome 
 
 Database für Blast :
 
