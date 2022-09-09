@@ -86,3 +86,14 @@ Cat : *.fna > Wolbachiaquerys
 In : blastn -db /home/linda/Scratch/Natalie/Ppr_instagrall.polished.FINAL.copy.fa -query /home/linda/Scratch/Natalie/Wolbachiaquerys -task blastn -max_target_seqs 1 -num_threads 40 -outfmt "6 qseqid sseqid piden lenght qstart qend sstart send" -out Wolbachiaquerys.results
 
 
+samtools view -bS (samfile) > (bamfile)
+            #compress .sam into .bam
+samtools sort (bamfile) -o (sorted bamfile)
+            #sort mapped reads according to position in the genome
+samtools index (sorted bamfile)
+            #index sorted bams, creates .sort.bam.bai-file
+umi_tools dedup -I (sorted bamfile) --output-stats=deduplicated --paired -S (sorted deduplicated bamfile) --temp-dir=tmp
+            #remove all duplications 
+samtools index (sorted deduplicated bamfile)
+            #index deduplicated bam
+done
