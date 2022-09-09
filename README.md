@@ -86,6 +86,9 @@ Cat : *.fna > Wolbachiaquerys
 In : blastn -db /home/linda/Scratch/Natalie/Ppr_instagrall.polished.FINAL.copy.fa -query /home/linda/Scratch/Natalie/Wolbachiaquerys -task blastn -max_target_seqs 1 -num_threads 40 -outfmt "6 qseqid sseqid piden lenght qstart qend sstart send" -out Wolbachiaquerys.results
 
 
+minimap2 -ax splice:hq -uf GCA_001931755.2_ASM193175v2_genomic.fna m64093_200831_134054.Q20.fastq.gz > alnFPpr.sam
+
+
 samtools view -bS (samfile) > (bamfile)
             #compress .sam into .bam
 samtools sort (bamfile) -o (sorted bamfile)
